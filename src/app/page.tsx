@@ -13,6 +13,8 @@ import { ArrowUpRight } from "lucide-react";
 
 const BLUR_FADE_DELAY = 0.04;
 
+import { LiveAge } from "@/components/magicui/live-age";
+
 export default function Page() {
   return (
     <main className="min-h-dvh flex flex-col gap-14 relative">
@@ -24,16 +26,24 @@ export default function Page() {
                 delay={BLUR_FADE_DELAY}
                 className="text-3xl font-semibold tracking-tighter sm:text-4xl lg:text-5xl"
                 yOffset={8}
-                text={`Hi, I'm ${DATA.name.split(" ")[0]}`}
+                text={`Hi, ${DATA.name.split(" ")[0]} here`}
               />
-              <BlurFadeText
-                className="text-muted-foreground max-w-[600px] md:text-lg lg:text-xl"
-                delay={BLUR_FADE_DELAY}
-                text={DATA.description}
+              <LiveAge 
+                birthday={DATA.birthday} 
+                delay={BLUR_FADE_DELAY} 
+                className="text-sm text-muted-foreground -mt-2 mb-2"
               />
+              <BlurFade delay={BLUR_FADE_DELAY}>
+                <p className="text-muted-foreground max-w-[600px] md:text-lg lg:text-xl leading-relaxed">
+                  I build real-world tech products that people actually use.{" "}
+                  <span className="text-foreground">
+                    Got an idea? I can build it for you.
+                  </span>
+                </p>
+              </BlurFade>
             </div>
             <BlurFade delay={BLUR_FADE_DELAY} className="order-1 md:order-2">
-              <Avatar className="size-24 md:size-32 border rounded-full shadow-lg ring-4 ring-muted">
+              <Avatar className="size-24 md:size-36 border rounded-full shadow-lg ring-4 ring-muted">
                 <AvatarImage alt={DATA.name} src={DATA.avatarUrl} />
                 <AvatarFallback>{DATA.initials}</AvatarFallback>
               </Avatar>
