@@ -14,6 +14,7 @@ import { ArrowUpRight } from "lucide-react";
 const BLUR_FADE_DELAY = 0.04;
 
 import { LiveAge } from "@/components/magicui/live-age";
+import { AudioPlayer } from "@/components/magicui/audio-player";
 
 export default function Page() {
   return (
@@ -62,6 +63,9 @@ export default function Page() {
                 {DATA.summary}
               </Markdown>
             </div>
+          </BlurFade>
+          <BlurFade delay={BLUR_FADE_DELAY * 4.5}>
+            <AudioPlayer />
           </BlurFade>
         </div>
       </section>
