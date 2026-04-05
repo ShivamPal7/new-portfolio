@@ -6,7 +6,9 @@ import { cn } from "@/lib/utils";
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import { GlobalMouseFollow } from "@/components/ui/skiper-ui/global-mouse-follow";
 import { FlickeringGrid } from "@/components/magicui/flickering-grid";
+import { Preloader } from "@/components/magicui/preloader";
 
 const geist = Geist({
   subsets: ["latin"],
@@ -71,7 +73,9 @@ export default function RootLayout({
         )}
       >
         <ThemeProvider attribute="class" defaultTheme="light">
+          <Preloader />
           <TooltipProvider delayDuration={0}>
+            <GlobalMouseFollow />
             <div className="absolute inset-0 top-0 left-0 right-0 h-[100px] overflow-hidden z-0">
               <FlickeringGrid
                 className="h-full w-full"
