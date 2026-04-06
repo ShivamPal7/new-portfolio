@@ -3,14 +3,27 @@ import { HomeIcon, NotebookIcon } from "lucide-react";
 import { ReactLight } from "@/components/ui/svgs/reactLight";
 import { NextjsIconDark } from "@/components/ui/svgs/nextjsIconDark";
 import { Typescript } from "@/components/ui/svgs/typescript";
+import { TailwindCSS } from "@/components/ui/svgs/tailwind";
 import { Nodejs } from "@/components/ui/svgs/nodejs";
-import { Python } from "@/components/ui/svgs/python";
-import { Golang } from "@/components/ui/svgs/golang";
+import { Expressjs } from "@/components/ui/svgs/expressjs";
 import { Postgresql } from "@/components/ui/svgs/postgresql";
+import { MongoDB } from "@/components/ui/svgs/mongo";
 import { Docker } from "@/components/ui/svgs/docker";
-import { Kubernetes } from "@/components/ui/svgs/kubernetes";
+import { Python } from "@/components/ui/svgs/python";
 import { Java } from "@/components/ui/svgs/java";
-import { Csharp } from "@/components/ui/svgs/csharp";
+import { Clang } from "@/components/ui/svgs/clang";
+import { Javascript } from "@/components/ui/svgs/javascript";
+import { MySQL } from "@/components/ui/svgs/mysql";
+import { Git } from "@/components/ui/svgs/git";
+import { GithubIcon } from "@/components/ui/svgs/github";
+import { VercelIcon } from "@/components/ui/svgs/vercel";
+import { Firebase } from "@/components/ui/svgs/firebase";
+import { Supabase } from "@/components/ui/svgs/supabase";
+import { ShadcnUI } from "@/components/ui/svgs/shadcnui";
+import { Prisma } from "@/components/ui/svgs/prisma";
+import { RESTAPI } from "@/components/ui/svgs/restapi";
+import { ReactNative } from "@/components/ui/svgs/reactnative";
+
 
 export const DATA = {
   name: "Shivam Pal",
@@ -36,18 +49,30 @@ Open to **full-time roles**, **freelancing**, and **collaborations**.`,
     { name: "React", icon: ReactLight },
     { name: "Next.js", icon: NextjsIconDark },
     { name: "Typescript", icon: Typescript },
+    { name: "TailwindCSS", icon: TailwindCSS },
     { name: "Node.js", icon: Nodejs },
-    { name: "Python", icon: Python },
-    { name: "Go", icon: Golang },
+    { name: "Express.js", icon: Expressjs },
     { name: "Postgres", icon: Postgresql },
+    { name: "MongoDB", icon: MongoDB },
+    { name: "React Native", icon: ReactLight },
     { name: "Docker", icon: Docker },
-    { name: "Kubernetes", icon: Kubernetes },
+    { name: "Javascript", icon: Javascript },
+    { name: "Python", icon: Python },
     { name: "Java", icon: Java },
-    { name: "C++", icon: Csharp },
+    { name: "C", icon: Clang },
+    { name: "MySQL", icon: MySQL },
+    { name: "Git", icon: Git },
+    { name: "Github", icon: GithubIcon },
+    { name: "Vercel", icon: VercelIcon },
+    { name: "Firebase", icon: Firebase },
+    { name: "Supabase", icon: Supabase },
+    { name: "Shadcn UI", icon: ShadcnUI },
+    { name: "Prisma", icon: Prisma },
+    { name: "REST API", icon: RESTAPI },
   ],
   navbar: [
     { href: "/", icon: HomeIcon, label: "Home" },
-    { href: "/blog", icon: NotebookIcon, label: "Blog" },
+    { href: "/resume.pdf", icon: NotebookIcon, label: "Resume" },
   ],
   contact: {
     email: "shivampal2777@gmail.com",
@@ -55,148 +80,89 @@ Open to **full-time roles**, **freelancing**, and **collaborations**.`,
     social: {
       GitHub: {
         name: "GitHub",
-        url: "https://dub.sh/dillion-github",
+        url: "https://github.com/ShivamPal7",
         icon: Icons.github,
         navbar: true,
       },
 
       LinkedIn: {
         name: "LinkedIn",
-        url: "https://dub.sh/dillion-linkedin",
+        url: "https://www.linkedin.com/in/shivampal7",
         icon: Icons.linkedin,
-
         navbar: true,
       },
       X: {
         name: "X",
-        url: "https://dub.sh/dillion-twitter",
+        url: "https://x.com/shivam_pal7",
         icon: Icons.x,
-
         navbar: true,
       },
       Youtube: {
         name: "Youtube",
-        url: "https://dub.sh/dillion-youtube",
+        url: "#",
         icon: Icons.youtube,
-        navbar: true,
+        navbar: false,
       },
       email: {
         name: "Send Email",
-        url: "#",
+        url: "mailto:shivampal2777@gmail.com?subject=Let's%20Work%20Together&body=Hey%20Shivam,%20I%20want%20to%20build%20a%20project...",
         icon: Icons.email,
-
-        navbar: false,
+        navbar: true,
       },
     },
   },
 
   work: [
     {
-      company: "Atomic Finance",
-      href: "https://atomic.finance",
+      company: "Freelancing",
+      href: "https://example.com",
       badges: [],
       location: "Remote",
-      title: "Bitcoin Protocol Engineer",
-      logoUrl: "/atomic.png",
-      start: "May 2021",
-      end: "Oct 2022",
+      title: "Software Engineer",
+      logoUrl: "/freelance.jpeg",
+      start: "August 2025",
+      end: "Present",
       description:
-        "Implemented the Bitcoin discreet log contract (DLC) protocol specifications as an open source Typescript SDK. Dockerized all microservices and setup production kubernetes cluster. Architected a data lake using AWS S3 and Athena for historical backtesting of bitcoin trading strategies. Built a mobile app using react native and typescript.",
+        "Completed 5+ freelance projects, handling design → development → deployment independently. Built platforms like Altaf Academy (course & product selling), WebbMedia (high-conversion agency site), and Brishbathco (SEO-focused website), focused on delivering high-quality UI, strong results, and high-conversion websites.",
     },
     {
-      company: "Shopify",
+      company: "Dwebbox",
       badges: [],
-      href: "https://shopify.com",
-      location: "Remote",
-      title: "Software Engineer",
-      logoUrl: "/shopify.svg",
-      start: "January 2021",
-      end: "April 2021",
+      href: "https://dwebbox.com",
+      location: "On-site",
+      title: "Full stack developer",
+      logoUrl: "/dwebbox.png",
+      start: "January 2025",
+      end: "July 2025",
       description:
-        "Implemented a custom Kubernetes controller in Go to automate the deployment of MySQL and ProxySQL custom resources in order to enable 2,000+ internal developers to instantly deploy their app databases to production. Wrote several scripts in Go to automate MySQL database failovers while maintaining master-slave replication topologies and keeping Zookeeper nodes consistent with changes.",
-    },
-    {
-      company: "Nvidia",
-      href: "https://nvidia.com/",
-      badges: [],
-      location: "Santa Clara, CA",
-      title: "Software Engineer",
-      logoUrl: "/nvidia.png",
-      start: "January 2020",
-      end: "April 2020",
-      description:
-        "Architected and wrote the entire MVP of the GeForce Now Cloud Gaming internal admin and A/B testing dashboard using React, Redux, TypeScript, and Python.",
-    },
-    {
-      company: "Splunk",
-      href: "https://splunk.com",
-      badges: [],
-      location: "San Jose, CA",
-      title: "Software Engineer",
-      logoUrl: "/splunk.svg",
-      start: "January 2019",
-      end: "April 2019",
-      description:
-        "Co-developed a prototype iOS app with another intern in Swift for the new Splunk Phantom security orchestration product (later publicly demoed and launched at .conf annual conference in Las Vegas). Implemented a realtime service for the iOS app in Django (Python) and C++; serialized data using protobufs transmitted over gRPC resulting in an approximate 500% increase in data throughput.",
-    },
-    {
-      company: "Lime",
-      href: "https://li.me/",
-      badges: [],
-      location: "San Francisco, CA",
-      title: "Software Engineer",
-      logoUrl: "/lime.svg",
-      start: "January 2018",
-      end: "April 2018",
-      description:
-        "Proposed and implemented an internal ruby API for sending/receiving commands to scooters over LTE networks. Developed a fully automated bike firmware update system to handle asynchronous firmware updates of over 100,000+ scooters worldwide, and provide progress reports in real-time using React, Ruby on Rails, PostgreSQL and AWS EC2 saving hundreds of developer hours.",
-    },
-    {
-      company: "Mitre Media",
-      href: "https://mitremedia.com/",
-      badges: [],
-      location: "Toronto, ON",
-      title: "Software Engineer",
-      logoUrl: "/mitremedia.png",
-      start: "May 2017",
-      end: "August 2017",
-      description:
-        "Designed and implemented a robust password encryption and browser cookie storage system in Ruby on Rails. Leveraged the Yahoo finance API to develop the dividend.com equity screener",
+        "Worked as a Full Stack Developer Intern at D-WebBox IT Solutions, contributing to 11+ production-level projects across different domains. Involved in end-to-end development, including backend logic, frontend UI, and feature implementation. Built responsive, user-friendly interfaces and ensured smooth performance.",
     },
   ],
   education: [
     {
-      school: "Buildspace",
+      school: "Thakur Shyamnarayan Engineering College",
       href: "https://buildspace.so",
-      degree: "s3, s4, sf1, s5",
-      logoUrl: "/buildspace.jpg",
-      start: "2023",
-      end: "2024",
+      degree: "Bachelor of Computer Engineering",
+      logoUrl: "/tsec.png",
+      start: "2025",
+      end: "2028",
     },
     {
-      school: "University of Waterloo",
-      href: "https://uwaterloo.ca",
-      degree: "Bachelor's Degree of Computer Science (BCS)",
-      logoUrl: "/waterloo.png",
-      start: "2016",
-      end: "2021",
+      school: "Government Polytechnic Mumbai",
+      href: "https://gpmumbai.ac.in",
+      degree: "Diploma in Information Technology",
+      logoUrl: "/gpm.png",
+      start: "2022",
+      end: "2025",
     },
     {
-      school: "Wilfrid Laurier University",
-      href: "https://wlu.ca",
-      degree: "Bachelor's Degree of Business Administration (BBA)",
-      logoUrl: "/laurier.png",
-      start: "2016",
-      end: "2021",
-    },
-    {
-      school: "International Baccalaureate",
-      href: "https://ibo.org",
-      degree: "IB Diploma",
-      logoUrl: "/ib.png",
+      school: "HSBT Veravali School",
+      href: "#",
+      degree: "1st - 10th (SSC)",
+      logoUrl: "/hsbt.png",
       start: "2012",
-      end: "2016",
-    },
+      end: "2022",
+    }
   ],
   projects: [
     {
