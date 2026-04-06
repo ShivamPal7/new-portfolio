@@ -24,7 +24,6 @@ import { Prisma } from "@/components/ui/svgs/prisma";
 import { RESTAPI } from "@/components/ui/svgs/restapi";
 import { ReactNative } from "@/components/ui/svgs/reactnative";
 
-
 export const DATA = {
   name: "Shivam Pal",
   birthday: "2007-06-03",
@@ -162,130 +161,109 @@ Open to **full-time roles**, **freelancing**, and **collaborations**.`,
       logoUrl: "/hsbt.png",
       start: "2012",
       end: "2022",
-    }
+    },
   ],
   projects: [
     {
-      title: "Chat Collect",
-      href: "https://chatcollect.com",
-      dates: "Jan 2024 - Feb 2024",
+      title: "Altaf Academy",
+      href: "https://www.altafacademy.com/",
+      dates: "Sep 2025 - Nov 2025",
       active: true,
       description:
-        "With the release of the [OpenAI GPT Store](https://openai.com/blog/introducing-the-gpt-store), I decided to build a SaaS which allows users to collect email addresses from their GPT users. This is a great way to build an audience and monetize your GPT API usage.",
+        "Built a full-scale ed-tech platform focused on YouTube automation and digital content monetization. Users can purchase courses, access digital products, and learn AI-powered content creation strategies. Implemented secure payments, authentication, and a powerful admin panel to manage courses, users, and subscriptions.",
       technologies: [
         "Next.js",
-        "Typescript",
+        "TypeScript",
         "PostgreSQL",
         "Prisma",
         "TailwindCSS",
         "Stripe",
         "Shadcn UI",
-        "Magic UI",
       ],
       links: [
         {
           type: "Website",
-          href: "https://chatcollect.com",
+          href: "https://www.altafacademy.com/",
           icon: <Icons.globe className="size-3" />,
         },
       ],
       image: "",
       video:
-        "https://pub-83c5db439b40468498f97946200806f7.r2.dev/chat-collect.mp4",
+        "https://res.cloudinary.com/dfc9iib3w/video/upload/v1775500509/0406_1_jdltwx.mp4",
     },
     {
-      title: "Magic UI",
-      href: "https://magicui.design",
-      dates: "June 2023 - Present",
+      title: "Webb Media",
+      href: "https://webbmedia.com.au/",
+      dates: "2025",
       active: true,
       description:
-        "Designed, developed and sold animated UI components for developers.",
+        "Designed and developed a high-converting modern landing page for a marketing agency focused on tradies. Built strong conversion flows with clear CTAs, trust sections, testimonials, and lead capture forms. Implemented enquiry and contact forms with email handling, optimized for lead generation and scalability.",
       technologies: [
         "Next.js",
-        "Typescript",
-        "PostgreSQL",
-        "Prisma",
         "TailwindCSS",
-        "Stripe",
         "Shadcn UI",
-        "Magic UI",
+        "Node.js",
+        "Nodemailer",
       ],
       links: [
         {
           type: "Website",
-          href: "https://magicui.design",
+          href: "https://webbmedia.com.au/",
           icon: <Icons.globe className="size-3" />,
-        },
-        {
-          type: "Source",
-          href: "https://github.com/magicuidesign/magicui",
-          icon: <Icons.github className="size-3" />,
         },
       ],
       image: "",
-      video: "https://cdn.magicui.design/bento-grid.mp4",
+      video: "https://res.cloudinary.com/dfc9iib3w/video/upload/v1775499867/webbmedia_guv0jm.mp4",
     },
     {
-      title: "llm.report",
-      href: "https://llm.report",
-      dates: "April 2023 - September 2023",
+      title: "Startup Spot",
+      href: "https://startup-spot.vercel.app/",
+      dates: "Dec 2024 - Jan 2025",
       active: true,
       description:
-        "Developed an open-source logging and analytics platform for OpenAI: Log your ChatGPT API requests, analyze costs, and improve your prompts.",
+        "Developed a startup idea pitching platform where founders can showcase ideas, validate them through community voting, and connect with potential collaborators or investors. Built engagement-driven features like idea submission, voting, and feedback loops.",
       technologies: [
         "Next.js",
-        "Typescript",
-        "PostgreSQL",
-        "Prisma",
+        "React.js",
         "TailwindCSS",
         "Shadcn UI",
-        "Magic UI",
-        "Stripe",
-        "Cloudflare Workers",
+        "Appwrite",
       ],
       links: [
         {
           type: "Website",
-          href: "https://llm.report",
-          icon: <Icons.globe className="size-3" />,
-        },
-        {
-          type: "Source",
-          href: "https://github.com/dillionverma/llm.report",
-          icon: <Icons.github className="size-3" />,
-        },
-      ],
-      image: "",
-      video: "https://cdn.llm.report/openai-demo.mp4",
-    },
-    {
-      title: "Automatic Chat",
-      href: "https://automatic.chat",
-      dates: "April 2023 - March 2024",
-      active: true,
-      description:
-        "Developed an AI Customer Support Chatbot which automatically responds to customer support tickets using the latest GPT models.",
-      technologies: [
-        "Next.js",
-        "Typescript",
-        "PostgreSQL",
-        "Prisma",
-        "TailwindCSS",
-        "Shadcn UI",
-        "Magic UI",
-        "Stripe",
-        "Cloudflare Workers",
-      ],
-      links: [
-        {
-          type: "Website",
-          href: "https://automatic.chat",
+          href: "https://startup-spot.vercel.app/",
           icon: <Icons.globe className="size-3" />,
         },
       ],
       image: "",
       video:
-        "https://pub-83c5db439b40468498f97946200806f7.r2.dev/automatic-chat.mp4",
+        "https://res.cloudinary.com/dfc9iib3w/video/upload/v1775498753/export-1775494003487_yamlkb.mp4",
+    },
+    {
+      title: "Stdy.fun",
+      href: "https://stdy.fun/",
+      dates: "Nov 2025 - Dec 2025",
+      active: true,
+      description:
+        "Created an AI-powered learning tool that generates structured notes and flashcards from topics, YouTube videos, PDFs, and AI inputs. Features include diagram generation, smart content structuring, and PDF export for efficient studying.",
+      technologies: [
+        "React.js",
+        "Vite",
+        "TailwindCSS",
+        "Gemini API",
+        "Firebase",
+      ],
+      links: [
+        {
+          type: "Website",
+          href: "https://stdy.fun/",
+          icon: <Icons.globe className="size-3" />,
+        },
+      ],
+      image: "",
+      video:
+        "https://res.cloudinary.com/dfc9iib3w/video/upload/v1775500289/study.fun_demo_dohxgg.mp4",
     },
   ],
   hackathons: [
