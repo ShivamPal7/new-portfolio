@@ -63,7 +63,7 @@ export default function HackathonsSection() {
                       >
                         <Badge className="flex items-center gap-1.5 text-xs bg-primary text-primary-foreground">
                           {link.icon}
-                          {link.title}
+                          {link.type}
                         </Badge>
                       </Link>
                     ))}
