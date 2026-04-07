@@ -9,6 +9,7 @@ import "./globals.css";
 import { GlobalMouseFollow } from "@/components/ui/skiper-ui/global-mouse-follow";
 import { FlickeringGrid } from "@/components/magicui/flickering-grid";
 import { Preloader } from "@/components/magicui/preloader";
+import { MomChatbot } from "@/components/magicui/mom-chatbot";
 
 const geist = Geist({
   subsets: ["latin"],
@@ -91,6 +92,7 @@ export default function RootLayout({
               {children}
             </div>
             <Navbar />
+            <MomChatbot />
           </TooltipProvider>
         </ThemeProvider>
       </body>

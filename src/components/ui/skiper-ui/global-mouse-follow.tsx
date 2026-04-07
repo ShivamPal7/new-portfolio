@@ -48,7 +48,7 @@ export function GlobalMouseFollow() {
   if (!mounted) return null;
 
   return (
-    <div className="pointer-events-none fixed inset-0 z-9999 overflow-hidden">
+    <div className="pointer-events-none fixed inset-0 overflow-hidden" style={{ zIndex: 99999 }}>
       <motion.div
         style={{
           x: xSpring,
