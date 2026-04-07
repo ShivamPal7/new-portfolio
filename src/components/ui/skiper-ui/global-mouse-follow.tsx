@@ -17,10 +17,27 @@ export function GlobalMouseFollow() {
   
   const [mounted, setMounted] = useState(false);
   const [isHovering, setIsHovering] = useState(false);
+  const [isVisible, setIsVisible] = useState(true); // Default to visible
   const lastElementRef = useRef<EventTarget | null>(null);
 
   useEffect(() => {
     setMounted(true);
+
+    const checkMouse = () => {
+      const hasFinePointer = window.matchMedia("(pointer: fine)").matches;
+      setIsVisible(hasFinePointer);
+      
+      // Toggle a class on the html element so we can hide the real cursor via CSS
+      // only when the custom cursor is actually active.
+      if (hasFinePointer) {
+        document.documentElement.classList.add("has-custom-cursor");
+      } else {
+        document.documentElement.classList.remove("has-custom-cursor");
+      }
+    };
+
+    checkMouse();
+    window.addEventListener("resize", checkMouse);
 
     const handlePointerMove = (e: MouseEvent) => {
       // Direct, non-throttled position updates
@@ -40,12 +57,15 @@ export function GlobalMouseFollow() {
     };
 
     window.addEventListener("pointermove", handlePointerMove, { passive: true });
+    
     return () => {
       window.removeEventListener("pointermove", handlePointerMove);
+      window.removeEventListener("resize", checkMouse);
+      document.documentElement.classList.remove("has-custom-cursor");
     };
   }, [xSpring, ySpring, scaleSpring]);
 
-  if (!mounted) return null;
+  if (!mounted || !isVisible) return null;
 
   return (
     <div className="pointer-events-none fixed inset-0 overflow-hidden" style={{ zIndex: 99999 }}>
