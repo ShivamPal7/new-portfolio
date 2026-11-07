@@ -28,20 +28,12 @@ export default function PrivacyPolicyPage() {
           <h1 className="title font-semibold text-3xl md:text-4xl tracking-tighter leading-tight">
             Privacy Policy
           </h1>
-          <div className="flex flex-col gap-1 text-sm text-muted-foreground">
-            <p>
-              <strong className="font-semibold text-foreground">
-                Effective Date:
-              </strong>{" "}
-              November 8, 2026
-            </p>
-            <p>
-              <strong className="font-semibold text-foreground">
-                Last Updated:
-              </strong>{" "}
-              November 8, 2026
-            </p>
-          </div>
+          <p className="text-sm text-muted-foreground">
+            <strong className="font-semibold text-foreground">
+              Last Updated:
+            </strong>{" "}
+            November 8, 2026
+          </p>
         </div>
       </BlurFade>
 
